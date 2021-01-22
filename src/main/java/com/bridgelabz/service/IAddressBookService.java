@@ -10,4 +10,6 @@ public interface IAddressBookService {
     Mono<AddressBook>  saveAddressBook(AddressBook addressBook);
 
     Flux<AddressBook> getAddressBook();
+
+    Mono<Void> deleteBook(String id);
 }

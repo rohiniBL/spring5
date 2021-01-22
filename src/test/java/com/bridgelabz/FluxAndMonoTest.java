@@ -19,7 +19,7 @@ public class FluxAndMonoTest {
 //                .concatWith(Flux.just("Zarana", "Sugandha"))
                 .log();
 
-        stringFlux.subscribe(System.out::println, (e) -> System.out.println(e.getMessage()),
+        stringFlux.subscribe(System.out::println, (e) -> System.out.println("oooo"+e.getMessage()),
                 () -> System.out.println("All the data received successfully...!! On complete event..!!"));
     }
 
